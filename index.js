@@ -5,7 +5,6 @@
 var express = require("express");
 var app = express();
 const port = process.env.PORT || 8000;
-const hostname = "3.75.158.163" || "3.125.183.140" || "35.157.117.28";
 
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 // so that your API is remotely testable by FCC
@@ -60,4 +59,6 @@ app.get("/api/", (req, res) => {
 //   console.log("Your app is listening on port http://localhost:3000");
 // });
 
-app.listen(port, hostname, () => console.log(`App listening on port ${port}!`));
+app.listen(port, () => console.log(`App listening on port ${port}!`));
+// app.listen(port, "3.75.158.163", () => console.log(`App listening on port ${port}!`));
+
