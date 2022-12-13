@@ -3,9 +3,7 @@
 
 // init project
 var express = require("express");
-var app = express()
-var server = require('http').createServer(app)
-
+var app = express();
 
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 // so that your API is remotely testable by FCC
@@ -56,4 +54,8 @@ app.get("/api/", (req, res) => {
 });
 
 // listen for requests :)
-server.listen(80);
+// var listener = app.listen(3000, function () {
+//   console.log("Your app is listening on port http://localhost:3000");
+// });
+
+app.listen(3000);
